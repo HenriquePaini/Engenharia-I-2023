@@ -1,0 +1,33 @@
+@startuml
+/'Aluno: Henrique Paini/'
+/'Caso de uso do sistema 
+de Universidade
+'/
+
+left to right direction
+actor Aluno as c
+
+package Profissional {
+  actor Professor as P
+  actor Faxineira as F
+  actor Recepção as R
+  actor Segurança as S
+
+  actor "Supervisor" as sa
+  actor Coordenador as ch
+}
+package Universoidade {
+  usecase "Ser aprovado" as UC1
+  usecase "Pagar" as UC2
+  usecase "estudar" as UC3
+  usecase "Analisar o estudo" as UC4
+  (UC1) .> (UC2) : include
+  (UC3) .> (UC2) : <<extends>>
+}
+sa -- UC4
+c -- UC1
+c -- UC2
+c -- UC3
+sa <|-- ch
+ 
+@enduml
