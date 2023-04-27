@@ -1,0 +1,78 @@
+@startuml
+/'Aluno: Henrique Paini/'
+/'Caso de uso do sistema 
+de Universidade
+'/
+
+
+
+package Universidade{
+  package Estudante{
+  left to right direction
+actor Aluno as c
+  }
+package profissionais{
+  actor Professor as P
+  actor Faxineira as F
+  actor financeiro as A
+  actor Vigilante as S
+  actor Coordenador as sa
+  package Reitor{
+  actor Reitor as ch
+  package Funções{ 
+  usecase "Representar Universidade" as FR
+  usecase "Administrar Universidade" as AD
+  }
+  }
+  
+}
+package funções {
+  package Funções_aluno{
+usecase "Estudar" as UC3  
+usecase "Assiste aula" as UC1
+usecase "Pagar a universidade" as UC2
+  }
+  package funções_profissionais{
+  usecase "Ministrar a aula" as UC5
+  usecase "Analisar o estudo" as UC4
+  usecase "Proteger e garantir a paz" as UC6
+  usecase "Fazer a limpeza" as UC7
+  usecase "Gerencia receitas e despesas" as UC8
+  usecase "Receber" as UC9
+  usecase "Pagar funcionários" as UC10
+  usecase "Prestar serviço" as UC11
+  }
+  
+}
+ P -- UC5 
+ P -- UC4
+ P -- UC9
+ F -- UC7
+ F -- UC11
+ F -- UC9
+ A -- UC10
+ A -- UC11
+ A -- UC8
+ S -- UC6
+ S -- UC9
+ c -- UC3
+ c -- UC2
+ P <|-- ch
+ F <|-- ch
+ A <|-- ch
+ S <|-- ch
+ sa <|-- ch 
+ ch <|-- FR
+ ch <|-- AD
+
+@enduml
+
+/'UC1) .> (UC2) : include
+  (UC3) .> (UC2) : <<extends>>
+}
+sa -- UC4
+c -- UC1
+c -- UC2
+c -- UC3
+sa <|-- ch
+ '/
