@@ -64,15 +64,6 @@ usecase "Pagar a universidade" as UC2
  sa <|-- ch 
  ch <|-- FR
  ch <|-- AD
-
+ sa -- UC11
+ sa -- UC9
 @enduml
-
-/'UC1) .> (UC2) : include
-  (UC3) .> (UC2) : <<extends>>
-}
-sa -- UC4
-c -- UC1
-c -- UC2
-c -- UC3
-sa <|-- ch
- '/
