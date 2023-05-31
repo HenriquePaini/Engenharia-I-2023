@@ -1,0 +1,69 @@
+@startuml
+/'Aluno: Henrique Paini/'
+/'Caso de uso Delicias Gourmet
+'/
+
+left to right direction
+
+ package Delicias_Gourmet{
+
+package Funções {
+  package Funcionarios {
+  
+  actor Gerente as Ger
+  actor Supervisora as Su
+  actor CoordenadorDeProdução as Coo
+  actor Analista as AQ
+  actor ResponsavelDasVendas as RVD
+  
+}
+  package Função_Cuidar_Estoque {
+     usecase "Cuidar do estoque" as UC5
+     usecase "Registrar entrada e saída de itens" as UC14
+     usecase "Dar baixa no sistema" as UC15
+     usecase "Dar baixa em itens que não estão em condições" as UC16
+     usecase "Realizar relatório do estque" as UC17
+    
+  }
+  package Funções_variadas{
+  usecase "Verificar a necessidades de compra" as UC1
+  usecase "Gerenciar processos de produção" as UC8
+  usecase "Planejamento de organização da produção" as UC6
+  usecase "Supervisionar" as UC4
+  usecase "Supervisionar a produção" as UC7
+  usecase "Desenvolver e implementar" as UC9
+  usecase "Fazer avaliações de Qualidade" as UC10
+  usecase "Fazer vendas e distribuições" as UC11
+  usecase "Administrar recursos" as UC12
+  usecase "Negociar valores" as UC2
+  usecase "Comprar" as UC3
+  usecase "Administrar a distribuição de produtos" as UC13
+}
+}
+  UC14 <|-- UC5
+  UC15 <|-- UC14
+  UC16 <|-- UC15
+  UC17 <|-- UC16
+  (Ger)--(UC1)
+  (Ger)--(UC2)
+  (Ger)--(UC3)
+  (Su)--(UC4)
+  (Su)--(UC5)
+  (Coo)--(UC6)
+  (Coo)--(UC7)
+  (Coo)--(UC8)
+  (AQ) -- (UC9)
+  (AQ) -- (UC10)
+  (RVD) -- (UC11)
+  (RVD) -- (UC12)
+  (RVD) -- (UC13)
+  
+
+}
+
+
+RVD <|-- AQ
+AQ <|-- Coo
+Coo <|-- Su
+Su <|-- Ger
+@enduml
