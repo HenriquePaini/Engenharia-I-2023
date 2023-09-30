@@ -1,0 +1,258 @@
+@media (min-width: 1080px){
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hed{
+    background-color: #e0e9e7;
+    margin-left: 0px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+    
+}
+
+.header--area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 104px;
+    
+}
+
+.header-left img{
+    width: 128px;
+    height: 104px;
+    margin-left: -76px;
+    margin-top: 0px;
+    object-fit: cover;
+    position: fixed;
+    top: 0px;
+    left: 89px;
+    
+}
+
+
+.texto{
+    margin-left: -420px;
+    margin-top: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+
+
+}
+
+.header--serch form{
+    display: flex;
+
+}
+
+.header--serch input{
+    font-size: 16px;
+    padding: 7px 10px;
+    border: 1px solid #999999;
+    outline: 0;
+    width: 100%;
+    max-width: 220px;
+}
+
+.header--serch button{
+    border: 0;
+    background-color: transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.header--serch button img{
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    margin-left: 0;
+  
+}
+
+.teste{
+    width: 128px;
+    height: 590px;
+    margin-top: 0px;
+    margin-left: 13px;
+    background-color: #e0e9e7;
+    margin-bottom: 10px;
+}
+
+.alfabeto{
+    margin-left: 60px;
+    cursor: pointer;
+    list-style-type: none;
+    font-family: fantasy;
+    font-size: 115%;
+    -webkit-text-stroke: 1px rgb(222, 14, 14);
+
+}
+
+.texto1{
+    margin-left: 20px;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+.corpo{
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    background-color: rgb(101, 8, 8);
+}
+
+.quadrado1{
+    background-color: #e0e9e7;
+    width: 400px;
+    height: 200px;
+    margin-top: -535px;
+    margin-left: 300px;
+}
+
+.quadrado2{
+    background-color: #e0e9e7;
+    width: 400px;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 800px;
+}
+.quadrado3{
+    background-color: #e0e9e7;
+    width: 400px;
+    height: 200px;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+.quadrado4{
+    background-color: #e0e9e7;
+    width: 400px;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 800px;
+}
+/**/
+.tit1{
+    text-align: center;
+}
+
+.tex1{
+    font-size: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.textbot1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    font-style: italic;
+    border: 2px solid black;
+    border-left: -20px;  
+    background-color: aquamarine;
+}
+/**/
+.tit2{
+    text-align: center;
+}
+
+.tex2{
+    font-size: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.textbot2{
+    margin-top: 50px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    font-style: italic;
+    border: 2px solid black;
+    border-left: -20px;  
+    background-color: aquamarine;
+}
+/**/
+.tit3{
+    text-align: center;
+}
+
+.tex3{
+    font-size: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.textbot3{
+    margin-top: 70px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    font-style: italic;
+    border: 2px solid black;
+    border-left: -20px;  
+    background-color: aquamarine;
+}
+/**/
+.tit4{
+    text-align: center;
+}
+
+.tex4{
+    font-size: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.textbot4{
+    margin-top: 51px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+    font-style: italic;
+    border: 2px solid black;
+    border-left: -20px;  
+    background-color: aquamarine;
+}
+/**/
+.testee{
+    background-color: rgb(225, 88, 88);
+    cursor: pointer;
+    border: 2px solid black;
+    color: rgb(36, 64, 125);
+    display: flex;
+}
+
+.testee2{
+    background-color: rgb(225, 88, 88);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(36, 64, 125);
+    margin-left: 400px;
+
+}
+.testee3{
+    background-color: rgb(225, 88, 88);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(36, 64, 125);
+    display: flex;
+    margin-left: 185px;
+
+}
+
+.testee4{
+    background-color: rgb(225, 88, 88);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(36, 64, 125);
+    display: flex;
+    margin-left: 150px;
+
+}
+
+}
